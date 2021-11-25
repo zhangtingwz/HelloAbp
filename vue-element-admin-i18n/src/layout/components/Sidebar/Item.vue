@@ -1,4 +1,5 @@
 <script>
+import i18n from '@/lang';
 export default {
   name: 'MenuItem',
   functional: true,
@@ -25,7 +26,7 @@ export default {
     }
 
     if (title) {
-      vnodes.push(<span slot='title'>{(title)}</span>)
+      vnodes.push(<span slot='title'>{i18n.t(title)}</span>)
     }
     return vnodes
   }
